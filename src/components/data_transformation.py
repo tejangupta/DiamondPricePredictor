@@ -66,7 +66,7 @@ class DataTransformation:
 
             return preprocessor
         except Exception as e:
-            logging.info('Error in Data Transformation')
+            logging.error('Error in Data Transformation')
             raise CustomException(e, sys)
 
     def initiate_data_transformation(self, train_path, test_path):
@@ -114,5 +114,5 @@ class DataTransformation:
                 self.data_transformation_config.preprocessor_obj_file_path,
             )
         except Exception as e:
-            logging.info('Exception occurred in the initiate data transformation')
+            logging.error('Exception occurred in the initiate data transformation')
             raise CustomException(e, sys)
