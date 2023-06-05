@@ -10,9 +10,9 @@ from dataclasses import dataclass
 # Initialize the Data Ingestion Configuration
 @dataclass
 class DataIngestionConfig:
-    train_data_path: str = os.path.join('..', '..', 'artifacts', 'train.csv')
-    test_data_path: str = os.path.join('..', '..', 'artifacts', 'test.csv')
-    raw_data_path: str = os.path.join('..', '..', 'artifacts', 'raw.csv')
+    train_data_path: str = os.path.join('artifacts', 'train.csv')
+    test_data_path: str = os.path.join('artifacts', 'test.csv')
+    raw_data_path: str = os.path.join('artifacts', 'raw.csv')
 
 
 # Create a class for Data Ingestion
@@ -23,11 +23,12 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Data Ingestion method starts')
         try:
-            df = pd.read_csv(os.path.join('..', '..', 'notebooks', 'data', 'gemstone.csv'))
+            df = pd.read_csv(os.path.join('notebooks/data', 'gemstone.csv'))
             logging.info('Dataset read as pandas Dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path, index=False)
+
             logging.info('Train test split')
             train_set, test_set = train_test_split(df, test_size=0.30, random_state=42)
 

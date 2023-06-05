@@ -16,6 +16,7 @@ def save_object(file_path, obj):
         with open(file_path, "wb") as file_obj:
             pickle.dump(obj, file_obj)
     except Exception as e:
+        logging.error('Exception occurred during saving object')
         raise CustomException(e, sys)
 
 

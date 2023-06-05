@@ -1,6 +1,6 @@
 # Diamond Price Predictor
 
-![](C:\Users\tejan\Desktop\DiamondPricePrediction.gif)
+![Diamond Price Prediction Demo](C:\Users\tejan\Videos\Captures\DiamondPricePrediction.mp4)
 
 This project is a web application
 that predicts the price of a diamond based on various features and characteristics of a diamond.
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 flask run
 ```
 
-5. Open your web browser and visit `http://localhost:3000` to access the application.
+5. Open your web browser and visit `http://localhost:5000` to access the application.
 
 ## Usage 
 
@@ -72,7 +72,7 @@ The Diamond Price Prediction application is built using the following technologi
 
 - HTML, CSS, and JavaScript for the front-end user interface
 - Flask for the server-side application
-- Linear Regression for predicting diamond prices
+- Linear Regression (My Best Model) for predicting diamond prices
 - Fetch API for communicating with the server
 - Bootstrap for styling and responsive design
 
