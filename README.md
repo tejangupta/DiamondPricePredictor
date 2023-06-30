@@ -1,6 +1,6 @@
 # Diamond Price Predictor
 
-![Diamond Price Prediction Demo](C:\Users\tejan\Videos\Captures\DiamondPricePrediction.mp4)
+![diamondpricepredictor](https://github.com/tejangupta/DiamondPricePredictor/assets/89571912/ad83a692-a9a8-4575-8f28-58fdf358e65c)
 
 This project is a web application
 that predicts the price of a diamond based on various features and characteristics of a diamond.
